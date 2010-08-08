@@ -54,7 +54,7 @@ def urlmap = [
     "/dj_pompey": "views/dj_pompey.haml",
     "/quotes": "views/quotes.haml",
     "/contact": "views/contact.haml",
-    "/link": "views/links.haml"
+    "/links": "views/links.haml"
 ]
 
 def app = Ratpack.app {
