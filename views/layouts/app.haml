@@ -1,0 +1,54 @@
+!!! Strict
+%html
+  %head
+    %title Cadrlife: ${layout.pageTitle}
+    = include.css "style.css"
+    /= include.js "jquery-1.4.2.min.js"
+    /= include.js "app.js"
+  %body#twocolumn-left
+    #container
+      .wrapper
+        #header
+          .wrapper
+            #g_title
+              %h1#page-title Ray Myers
+            %div(style="clear: both")
+            #g_description
+              %p.description I need closure(s)
+            %div(style="clear: both")
+        #main-content
+          .wrapper
+            .content-item
+              #g_body
+                = layout.pageContent
+            %div(style="clear: both")
+        #sidebar
+          .wrapper
+            .links
+              .wrapper
+                #g_sidebar
+                  %p.separator(style="text-align: center; clear: both;")
+                - layout.menuItems.each
+                  %p
+                    %a(href=it[1])= it[0]
+                %p
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        #footer
+          .wrapper
+            %hr
+            #g_footer
+              %p
+                Paid for by the committee to put meaningless information in footers.
+            %div(style="clear: both")
+    #extraDiv1
+      %span
+    #extraDiv2
+      %span
+    #extraDiv3
+      %span
+    #extraDiv4
+      %span
+    #extraDiv5
+      %span
+    #extraDiv6
+      %span
